@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .nav__link {
+    @apply relative text-base font-medium w-fit block;
+  }
+  .nav__link::after{
+    content:'';
+    @apply absolute h-[3px] bg-pink-600 w-full scale-x-0 origin-right transition-transform duration-300;
+    bottom:-2px;
+    left:0;
+  }
+  .nav__link:hover::after{
+    @apply scale-x-100;
+}
+}
