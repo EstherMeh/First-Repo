@@ -1,34 +1,9 @@
 
-
+import Link from 'next/link';
 export const navLinks = [
-    {
-      id:1,
-      url:'#',
-      label:"Home"
-    },
-    {
-      id:2,
-      url:'#',
-      label:"About"
-    },
-    {
-      id:3,
-      url:'#',
-      label:"Feature"
-    },
-    {
-      id:4,
-      url:'#',
-      label:"Testimonials"
-    },
-    {
-      id:5,
-      url:'#',
-      label:"Blog"
-    },
-    {
-      id:6,
-      url:'#',
-      label:"Content"
-    },
-  ]
+   { id: 1, label: "Home", url: "/"},
+   { id: 2, label: "Content", url: "/AnalyticFeature"},
+   { id: 3, label: "Features", url :"/Feature"},
+   { id: 4, label: "Why Us", url :"/WhyChoose"},
+   { id: 5, label:"Testimonials", url: "/Review"},
+  ]; 

@@ -21,11 +21,11 @@ const Home =() => {
 
   return( 
     <div className="overflow-hidden">
-    <Hero data-aos="fade-up" />
-    <WhyChoose data-aos="fade-right" />
-    <AnalyticFeature data-aos="fade-left" />
-    <Feature data-aos="zoom-in" />
-    <Review data-aos="slide-up" />
+    <Hero />
+     <AnalyticFeature />
+      <Feature />
+    <WhyChoose />
+    <Review />
   </div>
   );
 };

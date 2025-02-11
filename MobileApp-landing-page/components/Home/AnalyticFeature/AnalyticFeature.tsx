@@ -6,7 +6,9 @@ const AnalyticFeature = () => {
       {/*Define grid*/}
       <div className='w-[95%] sm:w-[80%] mx:auo items-center grid grid-col-1 lg:grid-cols-2 gap-10'>
         {/*Image Content*/}
-        <div>
+        <div
+        data-aos="zoom-in"
+                 data-aos-anchor-placement="top-center">
           <img src='/images/analytic.png'
           alt='image'
           width={500}

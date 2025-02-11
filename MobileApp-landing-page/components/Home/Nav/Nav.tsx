@@ -28,37 +28,39 @@ const Nav = ({openNav}:props) => {
         }
       },[]);
 
+  {}
+  
+
   return (
-    <div
+
+    <div 
       className={`fixed top-0 w-full transition-all duration-300 ${
         navBg ? "bg-white shadow-md" : "bg-transparent"
-      } h-[12vh] z-[1000]`}
-    >
-      <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
+      } h-[12vh] z-[1000]`}>
+        <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* LOGO */}
-        <h1 className="text-xl md:text-2xl font-bold">
-          <span className="text-3xl md:text-4xl text-pink-700">T</span>ravel{" "}
+          <h1 className="text-xl md:text-2xl font-bold">
+          <span className="text-3xl md:text-4xl text-pink-700">T</span>ravel
           <span className="text-3xl md:text-4xl text-pink-700">B</span>uddy
-        </h1>
+          </h1>
 
-        {/* NavLinks */}
-        <div className="hidden lg:flex items-center space-x-10">
+
+         {/* NavLinks */}
+          <nav className="hidden lg:flex items-center space-x-10">
           {navLinks.map((link) => (
-            <a href={link.url} key={link.id} className="nav__link">
+            <Link key={link.id} href={link.url} className="nav__link">
               {link.label}
-            </a>
+            </Link>
           ))}
-        </div>
-          
-
+          </nav>
           <div>
           {/* Burger Menu */}
           <HiBars3BottomRight onClick={openNav}
            className="w-8 h-8 cursor-pointer text-black lg:hidden" />
-        </div>
+          </div>
       </div>
     </div>
   );
-};
+}
 
 export default Nav;
